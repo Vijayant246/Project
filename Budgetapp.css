@@ -1,0 +1,171 @@
+* {
+    padding: 1px;
+    margin: 1px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: #9cb9f1;
+}
+
+.wrapper {
+    width: 90%;
+    font-size: 20px;
+    max-width: 43.75;
+    margin: 1mm auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.sub-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12mm;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper h3 {
+    color: #8525c1;
+    font-weight: 500;
+    margin-bottom: 6mm;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: 6mm;
+    border: 1px solid #03A9F4;
+    border-radius: 10mm;
+    color: #1e2b61;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 6mm;
+}
+
+.container input:focus {
+    border-color: #080d1f;
+}
+
+.total-amount-container,
+.user-amount-container {
+    background-color: #dbe0e9;
+    padding: 2mm 4mm;
+    border-radius: 3mm;
+    box-shadow: 6mm 8mm 3mm rgb(93, 73, 129, 86%);
+}
+
+.output-container {
+    background-color: #b5c8eb;
+    color: #051656;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3mm;
+    box-shadow: 6mm 8mm 3mm rgb(93, 73, 129, 86%);
+    margin: 15mm 0;
+    padding: 4mm;
+}
+
+.output-container p {
+    font-weight: bold;
+    margin-bottom: 6mm;
+}
+
+.output-container span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #2e4189;
+}
+
+.submit {
+    font-size: 4mm;
+    margin-top: 1mm;
+    background-color: #a269c5;
+    border: none;
+    border-radius: 3mm;
+    margin: 2mm;
+    outline: #000000;
+    color: #430202;
+    padding: 3mm 3mm;
+    cursor: pointer;
+}
+
+.list {
+    background-Color: #bfbad2;
+    padding: 3mm 2mm;
+    box-shadow: 4mm 2mm 2mm rgb(93, 73, 129, 86%);
+    border-radius: 3mm;
+    color: #8525c1
+}
+
+.sublist-content {
+    width: 100%;
+    border-left: 0.9mm Solid #101f4f;
+    margin-bottom: 2mm;
+    padding: 1mm;
+    display:grid;
+    Grid-Template-Columns: 3fr 2fr 1fr 1fr;
+}
+
+.product {
+    font-weight: bold;
+    color: #0228a2;
+}
+
+.amount {
+    color: #2e4189;
+    margin-left: 10%;
+}
+
+.icons-ciontainer {
+    width: 5mm;
+    margin: 4mm;
+    align-items: Center;
+}
+
+.product-title {
+    margin-bottom: 1mm;
+}
+
+.hide {
+    display: None;
+}
+
+.error {
+    color: #ec001a;
+}
+
+.edit,
+.delete {
+    background: #a89cd6;
+    cursor: Pointer;
+    margin-right: 5mm;
+    border: none;
+    border-radius:none;
+    Color: #611459;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        Font-Size: 20px;
+    }
+
+    .sub-container {
+        Grid-Template-Columns: 2fr;
+        Gap: 2mm;
+    }
+}
